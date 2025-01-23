@@ -1,41 +1,46 @@
- 
+import lelah from '../images/lelah.jpeg';
+import jesus from '../images/jesus.jpeg';
+import annie from '../images/annie.jpeg';
+import robert from '../images/robert.jpeg';
+import amy from '../images/amy.jpeg';
+import anthony from '../images/anthony.jpeg';
 export const profiles = [
     {
         "name": "Lelah Nichols",
         "location": "Troy, MI",
         "tags": ['clothes', 'stem'],
-        "image": "../../../public/images/lelah.jpeg",
+        "image": lelah,
     },
     {
         "name": "Jesus Weiss",
         "location": "Fort Worth, TX",
         "tags": ['headset', 'gadget', 'speed', 'winter'],
-        "image": "../../../public/images/jesus.jpeg",
+        "image": jesus,
     },
     {
         "name": "Annie Rice",
         "location": "Austin, TX",
         "tags": ['road', 'mountain', 'trip', 'earth', 'nature'],
-        "image": "../../../public/images/annie.jpeg",
+        "image": annie,
     },
     {
-        "name": "Rober Brower",
+        "name": "Robert Brower",
         "location": "Cincinnati, OH",
         "tags": ['Maintainance', 'gears', 'frame', 'repair'],
-        "image": "../../../public/images/robert.jpeg",
+        "image": robert,
     },
     {
         "name": "Amy Campbell",
         "location": "Warrior, AL",
         "tags": ['music', 'disks'],
-        "image": "../../../public/images/amy.jpeg",
+        "image": amy,
 
     },
     {
         "name": "Anthony S.Morin",
         "location": "Lyndhurst, NJ",
         "tags": ['vintage', 'electric'],
-        "image": "../../../public/images/anthony.jpeg",
+        "image": anthony,
 
     }
 ];

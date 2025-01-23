@@ -1,27 +1,20 @@
-import { profiles } from "../../assets/Data.js";
 import "./Card.css";
 
-export default function Card() {
+export default function Card({image, name, location, tags, active}) {
   return (
-    <div className="profile-wrapper">
-      {profiles.map((profile, index) => {
-        return (
-          <div className={"profile-card" + (index == 1 ? ' active' : '')}>
-            <div className="profile-image">
-              <img src={profile.image} />
-            </div>
-            <div className="profile-details">
-              <p className="profile-name">{profile.name}</p>
-              <p className="profile-location">{profile.location}</p>
-              <div className="tag-wrapper">
-                {profile.tags.map((tag) => {
-                  return <p className="tag">{tag}</p>;
-                })}
-              </div>
-            </div>
+      <div className={"profile-card" + (active)}>
+        <div className="profile-image">
+          <img src={image} />
+        </div>
+        <div className="profile-details">
+          <p className="profile-name">{name}</p>
+          <p className="profile-location">{location}</p>
+          <div className="tag-wrapper">
+            {tags && tags.map((tag) => {
+              return <p className="tag">{tag}</p>;
+            })}
           </div>
-        );
-      })}
-    </div>
+        </div>
+      </div>
   );
 }

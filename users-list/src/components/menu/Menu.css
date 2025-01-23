@@ -1,0 +1,16 @@
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    color: #4b5061;
+}
+li.active{
+    background-color: #849fff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+}

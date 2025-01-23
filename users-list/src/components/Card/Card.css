@@ -1,17 +1,10 @@
-.profile-wrapper{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px; 
-    flex-wrap: wrap;
-    padding: 20px;
-}
+
 .profile-card{
     display: flex;
     background: #fbfcff;
-    width: 350px;
-    border-radius: 5px;
-    padding: 20px 20px 45px;
+    width: 300px;
+    border-radius: 15px;
+    padding: 20px 20px 65px;
     gap: 20px;
     
 }
@@ -19,8 +12,9 @@
     width: 60%;
 }
 .profile-card.active{
+    background: #fbfcff;
     border: 1px solid #c4c6cc;
-    box-shadow: 2px 2px 2px 2px #ebeefc;
+    box-shadow: rgba(106, 106, 222, 0.2) 0px 7px 29px 0px;
 }
 .profile-wrapper .profile-image{
     width: 100px;
@@ -28,7 +22,8 @@
 }
 .profile-card .profile-name{
     font-size: 16px;
-    font-weight: bold;
+    font-weight: bolder;
+    color: #2c3147;
 }
 .profile-image img{
     object-fit: cover;
@@ -38,6 +33,7 @@
 }
 .profile-card .profile-location{
     font-size: 12px;
+    color: #2c3147;
 }
 
 .tag-wrapper{
@@ -47,9 +43,9 @@
     margin-top: 18px;
 }
 .tag-wrapper .tag{
-    color: #6c63ff;
+    color: #849fff;
     font-size: 12px;
-    padding: 1px 10px;
-    border-radius: 15px;
+    padding: 1px 6px;
+    border-radius: 11px;
     border: 1px solid #c4c6cc;
 }

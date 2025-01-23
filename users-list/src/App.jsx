@@ -1,11 +1,9 @@
-import Header from './components/Header/Header.jsx';
-import Card from './components/Card/Card.jsx';
 import './App.css';
+import UserList from './components/pages/UserList.jsx';
 export default function App(){
     return(
         <>
-            <Header/>
-            <Card/>
+            <UserList/>
         </>
     )
 }

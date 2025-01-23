@@ -1,0 +1,1 @@
+export const MENU_LIST = [ "Reputation", "New Users", "Voters", "Editors", "Moderators"];

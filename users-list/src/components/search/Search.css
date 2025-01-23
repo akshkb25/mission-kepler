@@ -1,0 +1,17 @@
+.header-container .search-container img{
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    top: 27px;
+    left: 21px;
+}
+.header-container .search-container input{
+    padding: 15px 15px 15px 50px;
+    border: 1px solid #e3e7f3;
+    width: 300px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+::placeholder{
+    color: #797d8a;
+}
