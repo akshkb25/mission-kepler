@@ -7,10 +7,14 @@ ul{
     justify-content: center;
     align-items: center;
     color: #4b5061;
+    
 }
-li.active{
+ul li{
+    padding: 10px;
+}
+li:hover{
+    cursor: pointer;
     background-color: #849fff;
     color: white;
-    padding: 10px 15px;
     border-radius: 5px;
 }

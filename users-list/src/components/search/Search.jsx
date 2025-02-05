@@ -1,10 +1,10 @@
-import search from "../../assets/images/search-icon.svg"; 
 import './Search.css';
+import { FaSearch } from "react-icons/fa";
 
 export default function Search(){
     return(
             <div className='search-container'>
-                <img src={search}/>
+                <FaSearch size={20} color='black' className='search-icon'/>
                 <input type='search'placeholder='Search users'/>
             </div>
     )

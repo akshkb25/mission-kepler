@@ -1,9 +1,9 @@
-.header-container .search-container img{
+.header-container .search-container .search-icon{
     position: absolute;
     height: 20px;
     width: 20px;
     top: 27px;
-    left: 21px;
+    left: 17px;
 }
 .header-container .search-container input{
     padding: 15px 15px 15px 50px;

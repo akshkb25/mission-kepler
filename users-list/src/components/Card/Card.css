@@ -6,12 +6,14 @@
     border-radius: 15px;
     padding: 20px 20px 65px;
     gap: 20px;
+    border: 1px solid transparent;
     
 }
 .profile-card .profile-details{
     width: 60%;
 }
-.profile-card.active{
+.profile-card:hover{
+    cursor: pointer;
     background: #fbfcff;
     border: 1px solid #c4c6cc;
     box-shadow: rgba(106, 106, 222, 0.2) 0px 7px 29px 0px;

@@ -1,20 +1,22 @@
 import "./Card.css";
+import { v4 as uuidv4 } from "uuid";
 
-export default function Card({image, name, location, tags, active}) {
+export default function Card({ id, name, location, image, tags}) {
   return (
-      <div className={"profile-card" + (active)}>
-        <div className="profile-image">
-          <img src={image} />
-        </div>
-        <div className="profile-details">
-          <p className="profile-name">{name}</p>
-          <p className="profile-location">{location}</p>
-          <div className="tag-wrapper">
-            {tags && tags.map((tag) => {
-              return <p className="tag">{tag}</p>;
-            })}
+        <div className={'profile-card'} key={id} >
+          <div className='profile-image'>
+            <img src={image} alt={name}/>
           </div>
-        </div>
+          <div className='profile-details'>
+            <p className='profile-name'>{name}</p>
+            <p className='profile-location'>{location}</p>
+            <div className='tag-wrapper'>
+              {tags?.map((tag) => {
+                return <p className='tag' key={uuidv4()}>{tag}</p>;
+              })}
+            </div>
+          </div>
       </div>
+      
   );
 }
