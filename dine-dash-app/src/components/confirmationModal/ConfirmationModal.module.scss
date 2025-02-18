@@ -1,0 +1,28 @@
+.confirmationModal{
+    position: absolute;
+    width: 500px;
+    height: 600px;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border-radius: 5px;
+    top: 20%;
+    left: 33%;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    p{
+        font-size: 32px;
+        line-height: 2;
+        letter-spacing: 2px;
+        .highlightText{
+            color: #FF6B00;
+        }
+    }
+    .footerText{
+        font-size: 22px;
+        color: #B8B8B8;
+        text-align: center;
+    }
+
+}

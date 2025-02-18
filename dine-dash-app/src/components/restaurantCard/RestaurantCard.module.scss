@@ -1,0 +1,95 @@
+.restaurantCardContainer{
+    position: relative;
+    display: flex;
+    min-width: 300px;
+    min-height: 300px;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.3s ease-in-out;
+
+    .restaurantDetailsContainer{
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        gap: 5px;
+        justify-content: space-between;
+        width: -webkit-fill-available;
+        background-color: rgba(0,0,0,0.5);
+        color: #fff;
+        min-height: 70px;
+        padding: 10px 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        .detailsContainer{
+            p{
+                font-size: 16px;
+                margin-bottom: 5px;
+                line-height: 1.5;
+            }
+            .restaurantName{
+                font-size: 14px;
+            }
+            .restaurantLocation, .restaurantTimings{
+                font-size: 12px;
+            }
+        }
+       
+        .cuisineSection{
+            display: none;
+            p{
+                font-size: 10px;
+                
+            }
+            a{
+                font-size: 12px;
+                font-style: italic;
+                text-decoration: underline;
+            }
+            a:hover{
+                cursor: pointer;
+            }
+        }
+
+        
+    }
+
+    .preferenceContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+
+        .preferenceSection{
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .ratingSection{
+            display: flex;
+            gap: 3px;
+            align-items: center;
+            background-color: green;
+            padding: 4px 12px;
+            border-radius: 10px;
+
+            p{
+                font-size: 12px;
+            }
+            svg{
+                width: 12px;
+                height: 12px;
+            }
+        }
+    }
+}
+
+.restaurantCardContainer:hover{
+    transform: scale(1.1);
+    .cuisineSection{
+        display: block;
+        
+    }
+    
+}

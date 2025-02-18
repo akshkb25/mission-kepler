@@ -1,0 +1,55 @@
+.carouselWrapper{
+    padding: 0;
+    overflow: hidden;
+    :global(.slick-dots){
+        position: absolute;
+        bottom: 40px;
+        left: 46%;
+        padding: 0px 3px;
+        width: max-content;
+        border-radius: 30px;
+        background: rgba(0, 0, 0, 0.5);
+        button::before{
+            
+            font-size: 18px;
+            color: white;
+
+        }   
+        :global(.slick-active){
+            button::before{
+                opacity: 1;
+                color: white;
+            } 
+        }
+
+    }
+}
+.carouselContainer {
+    width: 100%;
+    margin: auto;
+    position: relative;
+    .imageContainer{
+        width: 100%;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+       
+    }
+    
+    p{
+        position: absolute;
+        color: white;
+        font-size: 50px;
+        font-weight: 800;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        text-align: center;
+        line-height: 1.5;
+        font-family: 'Poppins';
+    }
+}
+
+  
+

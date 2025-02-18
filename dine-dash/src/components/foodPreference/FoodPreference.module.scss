@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  .badgeContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 18px;
+    width: 15px;
+    border-radius: 4px;
+    position: relative;
+    .circle {
+      position: absolute;
+      border-radius: 50%;
+      height: 8px;
+      width: 8px;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+:root{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: 'Lato';
+  /* background-image: url('./assets/images/background.jpg'); */
+}
+
+body,ul,li,p{
+  margin: 0;
+  padding: 0;
+}
